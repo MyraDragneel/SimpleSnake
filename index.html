@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Modern Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="uiContainer">
+        <div id="header">
+            <h1>Modern Snake</h1>
+            <div id="scoreDisplay">Score: <span id="score">0</span></div>
+            </div>
+
+        <div id="gameContainer">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+             <div id="messageOverlay">
+                 <span id="messageText"></span>
+             </div>
+        </div>
+
+        <div id="controlsContainer">
+            <div id="actionControls">
+                <button id="btnStart" class="action-btn">Start</button>
+                <button id="btnPause" class="action-btn">Pause</button>
+                <button id="btnRestart" class="action-btn">Restart</button>
+            </div>
+            <div id="dpad">
+                <button id="btnUp" class="dpad-btn arrow-up">↑</button>
+                <button id="btnLeft" class="dpad-btn arrow-left">←</button>
+                <button id="btnDown" class="dpad-btn arrow-down">↓</button>
+                <button id="btnRight" class="dpad-btn arrow-right">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
